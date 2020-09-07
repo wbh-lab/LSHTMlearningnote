@@ -1,11 +1,11 @@
 
 二項分佈在醫學研究中至關重要，一組二項分佈的數據，指的通常是 $n$ 次相互獨立的[成功率爲 $\pi$ 的伯努利實驗](https://winterwang.github.io/post/probability2-4/) ($n$ independent Bernoulli trials) 中成功的次數。
 
-當 $X$ 服從二項分佈，記爲 $X \sim binomial(n, \pi)$ 或$X \sim bin(n, \pi)$。它的(第 $x$ 次實驗的)概率被定義爲：
+當 $X$ 服從二項分佈，記爲 $X \sim binomial(n, \pi)$ 或$X \sim bin(n, \pi)$。它的($x$ 次實驗成功的)概率被定義爲：
 
 $$
 \begin{align}
-P(X=x) &= ^nC_x\pi^x(1-\pi)^{n-x} \\
+P(X=x) &= C^n_x\pi^x(1-\pi)^{n-x} \\
        &= \binom{n}{x}\pi^x(1-\pi)^{n-x} \\
        & for\;\; x = 0,1,2,\dots,n
 \end{align}
